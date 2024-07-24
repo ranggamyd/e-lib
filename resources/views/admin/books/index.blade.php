@@ -63,7 +63,7 @@
                                         <td class="text-center align-middle">
                                             @foreach ($book->book_categories as $category)
                                                 <a href="/admin/categories/{{ $category->category->id }}"
-                                                    class="badge badge-pill badge-{{ $colors[array_rand($colors)] }}">{{ $category->category->category }}</a>
+                                                    class="badge badge-pill badge-{{ $colors[array_rand($colors)] }}">{{ $category->category->name }}</a>
                                             @endforeach
                                         </td>
                                         <td class="align-middle">

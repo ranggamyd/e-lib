@@ -69,10 +69,10 @@
                                             @if (old('book_authors'))
                                                 <option value="{{ $category->id }}"
                                                     {{ in_array($category->id, old('book_authors')) ? 'selected' : '' }}>
-                                                    {{ $category->category }}</option>
+                                                    {{ $category->name }}</option>
                                             @else
                                                 <option value="{{ $category->id }}" @foreach ($book->book_categories as $bookCategory) {{ $bookCategory->category->id == $category->id ? 'selected' : '' }} @endforeach>
-                                                    {{ $category->category }}
+                                                    {{ $category->name }}
                                                 </option>
                                             @endif
                                         @endforeach

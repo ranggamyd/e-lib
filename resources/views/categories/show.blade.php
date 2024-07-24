@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row my-4">
             <div class="col-md-8">
-                <h3 class="text-muted mb-3">Buku dalam Kategori {{ $category->category }}</h3>
+                <h3 class="text-muted mb-3">Buku dalam Kategori {{ $category->name }}</h3>
                 <div class="row">
                     @foreach ($booksInCategories as $book)
                         <div class="col-12">
@@ -81,7 +81,7 @@
                                 <div class="list-group list-group-flush">
                                     @foreach ($popTags->take(5) as $item)
                                         <a href="/categories/{{ $item->category_id }}"
-                                            class="list-group-item list-group-item-action">{{ $item->category->category }}</a>
+                                            class="list-group-item list-group-item-action">{{ $item->category->name }}</a>
                                     @endforeach
                                 </div>
                             </div>

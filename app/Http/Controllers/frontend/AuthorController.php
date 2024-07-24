@@ -22,7 +22,7 @@ class AuthorController extends Controller
         $colors = ['danger', 'info', 'warning', 'success'];
 
         return view('authors.index', [
-            'title' => 'Semua Kategori',
+            'title' => 'Semua Penulis',
             'authors' => Author::orderBy('name')->paginate(5),
             'newCollections' => Collection::latest()->get()->take(5),
             'popTags' => $popTags,

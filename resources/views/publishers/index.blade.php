@@ -57,7 +57,7 @@
                                 <div class="list-group list-group-flush">
                                     @foreach ($popTags->take(5) as $item)
                                         <a href="/categories/{{ $item->category_id }}"
-                                            class="list-group-item list-group-item-action">{{ $item->category->category }}</a>
+                                            class="list-group-item list-group-item-action">{{ $item->category->name }}</a>
                                     @endforeach
                                 </div>
                             </div>

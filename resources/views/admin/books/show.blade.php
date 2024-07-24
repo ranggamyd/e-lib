@@ -139,7 +139,7 @@
                                                             <dd class="col-sm-8">
                                                                 @foreach ($book->book_categories as $category)
                                                                     <a href="/categories/{{ $category->category->id }}"
-                                                                        class="text-decoration-none">{{ $category->category->category }}</a>@if (!$loop->last), @endif
+                                                                        class="text-decoration-none">{{ $category->category->name }}</a>@if (!$loop->last), @endif
                                                                 @endforeach
                                                             </dd>
                                                             <dt class="col-sm-4">Tersedia</dt>
